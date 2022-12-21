@@ -1,0 +1,27 @@
+.contenerCategory{
+    
+}
+
+.boxCategory{
+    display: flex;
+    justify-content: space-around;
+    height: 58px;
+    width: 872px;
+}
+
+.textCategory{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.05em;
+}
+
+.Textgreen{
+    color: #165724;
+}
+
+.Textgrey{
+    color: #C4C4C4;
+}

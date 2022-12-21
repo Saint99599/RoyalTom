@@ -1,0 +1,36 @@
+.contenerTopSeller{
+    display: flex;
+    justify-content: center;
+}
+
+.boxTopSeller{
+    position: relative;
+    max-width: 1220px;
+    margin: 110px 108px;
+    padding: 60px;
+    
+    background: #FFFFFF;
+    border: 3px solid #52775A;
+    box-shadow: 0px 2px 34px rgba(0, 0, 0, 0.07);
+    border-radius: 11px;
+}
+
+.titleTopSeller{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 40px;
+}
+
+.leafTopSeller{
+    height: 36px;
+    margin-left: 10px;
+}
+
+.productTopSeller{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

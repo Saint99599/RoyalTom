@@ -1,0 +1,136 @@
+.contenerCart{
+    background: #F7F7F6;
+    min-height: 500px;
+    padding: 60px 46px;
+}
+
+.centerCart{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.boxCart{
+    display: flex;
+    justify-content: space-between;
+    width: 1262px;
+}
+
+.productCart{
+}
+
+.summaryCart{
+    padding: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 11px;
+    margin-left: 40px;
+}
+
+.btnCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #226030;
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 11px;
+    width: 284px;
+    height: 52px;
+    margin-top: 20px;
+    padding: 20px;
+    color: #ffff;
+    font-weight: 400;
+    font-size: 24px;
+
+    background: #52775A;
+    border-radius: 11px;
+}
+
+.directionCart{
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.continueCart{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: #165724;
+}
+
+.itemCart{
+    display: grid;
+    grid-template-columns: 78px 128px 128px;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #656565;
+}
+
+.titleCart{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+    color: #656565;
+}
+
+.HeadCart{
+    margin: 20px 0;
+    width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.lineCart{
+    height: 1px;
+    background-color: #165724;
+}
+
+.topCart{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 48px;
+
+    letter-spacing: 0.15px;
+
+}
+
+.textblack{
+    font-family: 'Poppins';
+    font-style: normal;
+
+    letter-spacing: 0.15px;
+    text-transform: uppercase;
+
+    color: #333333;
+}
+
+.xcz{
+    
+}
