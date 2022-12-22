@@ -1,0 +1,308 @@
+body{
+  background: lightgray;
+  width: 100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: "Poppins";
+  font-size:24px;
+}
+
+button{
+  font-family: "poppins"
+}
+
+.container {
+  /* max-width: 500px; */
+  margin: auto;
+  height: auto;
+  overflow: auto;
+  /* min-height: 300px; */
+  /* border: 1px solid steelblue; */
+  padding: 30px;
+  border-radius: 5px;
+  /* display: flex; */
+}
+
+.selection{
+  width:30%;
+  float: left;
+
+}
+
+.selection .list{
+  /* https://stackoverflow.com/questions/19396180/how-to-spread-dynamic-divs-vertically-evenly */
+  display: flex;
+  flex-direction:column;
+  margin-left: 5%;
+}
+
+.selection .list div{
+  margin:20px;
+  margin-bottom: 25px;
+}
+
+.selection .list .account img{
+  width: 30%;
+  float: left;
+  border-radius: 50%;
+  margin-right:5%;
+}
+
+.selection .list .account {
+  font-size:20px;
+}
+
+.selection .list .account p{
+  font-size:18px;
+}
+
+.selection button{
+  background:none;
+  border:none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.selection button:hover{
+  color: green;
+}
+
+.Detail{
+  /* display:inline; */
+  width:60%;
+  float:left;
+  min-height:800px;
+  max-height:100%;
+  /* align-items:center; */
+  background-color:white;
+  border-radius:2%;
+}
+
+.Detail .block {
+  width:100%;
+  float:left;
+  margin-left:50px;
+  /* float:right; */
+}
+
+/* .Detail .header{
+  position:relative;
+} */
+
+.Detail .header p{
+  color:darkgreen;
+  font-size:32px;
+  font-weight: bold;
+  margin-left:50px;
+  display:inline-block;
+}
+
+.Detail hr{
+  margin-right:50px;
+  margin-left:50px;
+}
+
+.Detail .block p{
+  /* display:inline; */
+  width:50%;
+  float:left;
+  /* display: flex; */
+  /* width:60%; */
+  /* float:right; */
+}
+
+.Detail .block .input{
+  float:left;
+  text-align:center;
+  padding:20px 0;
+  /* width:50%; */
+
+}
+
+.Detail button{
+  float: right;
+  border-radius: 5px;
+  background-color:darkgreen;
+  color:white;
+  padding: 6px 18px;
+  margin: 20px;
+}
+
+.addressList{
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  overflow:auto;
+  font-size:18px;
+}
+
+.Detail .header button{
+  float:right;
+  padding:15px;
+  cursor:pointer;
+  margin:25px;
+  border:0;
+  /* height:200px */
+}
+
+.addressList .name{
+  display:flex;
+}
+.addressList .name h3{
+  margin-right:10px;
+  margin-left:10px;
+  margin-top:0;
+  margin-bottom:0;
+  /* padding-top:0;
+  padding-bottom:0; */
+}
+.addressList p{
+  margin:5px;
+  margin-left:10px;
+}
+
+.addressList button{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+.addressList .button .edit{
+  float:right;
+  background:none;
+  border:none;
+  cursor: pointer;
+  font-size: 18px;
+  color:green;
+}
+
+.addressList .button .default{
+  border:2px solid;
+  color:black;
+  border-color: darkgreen;
+  background-color:transparent;
+  float:left;
+}
+
+.Detail .header .popup{
+  position:relative;
+  top:50%;
+  left:50%;
+  font-size:20px;
+}
+
+.paymentDetail{
+  overflow:auto;
+}
+
+.paymentDetail .detail{
+  margin-left:50px;
+  float:left;
+  width:70%;
+  display:flex;
+}
+
+.paymentDetail .detail img{
+  object-fit: contain;
+}
+.paymentDetail .detail .text{
+  margin-left:20px;
+}
+
+.paymentDetail .detail .text p{
+  /* display:inline; */
+  /* float:left; */
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.paymentDetail .button{
+  display: flex;
+  flex-direction:column;
+  width:fit-content;
+  float:right;
+}
+
+.paymentDetail .button button{
+  top:50%;
+  transform: translateY(50%);
+  margin-right:50px;
+}
+
+.Detail .privacy{
+  float:left;
+  margin-left:50px;
+}
+
+.purchase{
+  overflow:auto;
+}
+
+.purchase .id{
+  margin-left:50px;
+}
+
+.purchase .product{
+  margin-left:50px;
+  display: flex;
+}
+
+.purchase .product .item{
+  width:80%;
+  float:left;
+}
+
+.purchase .product .price{
+  width:30%;
+  /* height:max-content; */
+  float:right;
+  position: relative;
+}
+
+.purchase .product .price p{
+  /* vertical-align: middle;
+  display: inline-block; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.purchase .summary{
+  margin-left:50px;
+  display: inline-block;
+  width: 90%;
+  /* vertical-align: top; */
+}
+
+.purchase .summary .status{
+  float:left;
+}
+
+.purchase .summary .total{
+  float:right;
+  right:50%;
+}
+
+.purchase .product .item{
+  display: flex;
+  float:left;
+}
+
+.purchase .product .item img{
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.purchase .product .item .detail{
+  margin-left:25px;
+}
+
+.purchase .product .item .detail p{
+  margin-top:15px;
+  margin-bottom:5px;
+}
+
+
