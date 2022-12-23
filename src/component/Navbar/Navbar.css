@@ -30,7 +30,7 @@ li {
     list-style-type: none;
 }
 
-input{
+#search{
     background: #FFFFFF;
     border: 2px solid #165724;
     border-radius: 11px;

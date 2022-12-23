@@ -1,7 +1,7 @@
 import React from 'react'
 import AddressList from './AddressList';
-// import {useState} from "react"
-// import Popup from './AddressPopup';
+import {useState} from "react"
+import AddressPopup from './Popup/AddressPopup';
 const tasks = [
   {
     name: 'Noname',
@@ -36,16 +36,16 @@ const tasks = [
 ]
 
 const Address = ({ name, tel, address}) => {
-  // const [popup, setpopup] = useState(false)
+  const [popup, setpopup] = useState(false)
 
   return (
     <div className="Detail">
+          <AddressPopup trigger={popup} setTriggers={setpopup}>
+            {/* <h3>My Popup</h3> */}
+          </AddressPopup>
           <div className="header">
             <p>Address</p>
-            <button className="address">Add new address</button>
-            {/* <Popup trigger={true}>
-              <h3>My Popup</h3>
-            </Popup> */}
+            <button className="address" onClick={() => setpopup(true)}>Add new address</button>
           </div>
           {tasks.map((task) => (
           <AddressList address={task}/>

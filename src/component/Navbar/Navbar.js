@@ -17,7 +17,7 @@ function Navbar(){
         </Link>
         <ul className="boxNavbar">
             <li className="searchNavbar">
-                <input type="text" placeholder="Search.."/>
+                <input id="search" type="text" placeholder="Search.."/>
                 <button className="btnSearchNavbar" onclick=""> <img className="searchTopSeller" src={search} alt="search" /> </button>
             </li>
             <li className="contactNavbar">

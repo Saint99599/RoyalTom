@@ -21,3 +21,4 @@ const bank = ({bank}) => {
 }
 
 export default bank
+

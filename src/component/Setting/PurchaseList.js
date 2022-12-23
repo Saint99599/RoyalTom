@@ -1,6 +1,10 @@
 import React from 'react'
+import ReviewPopup from './Popup/ReviewPopup'
+import {useState} from "react"
 
 const PurchaseList = ({purchase}) => {
+    const [popup, setpopup] = useState(false)
+
   return (
     <div className="purchase">
         <div className="id">
@@ -31,7 +35,25 @@ const PurchaseList = ({purchase}) => {
                 <p>{"Total Price: " + purchase.price + " ฿"}</p>
             </div>
         </div>
+        {
+            purchase.status == "Order Complete" &&
+            <div className="review">
+                <button className='white'>
+                    Buy Again
+                </button>
+                <button className='white'>
+                    Contact Seller
+                </button>
+                <button className='green' onClick={() => setpopup(true)}>
+                    Rating
+                </button>
+            </div>
+        }
+        {/* {active === "Profile" && } */}
         <hr></hr>
+        <ReviewPopup trigger={popup} setTriggers={setpopup} product={purchase}>
+
+        </ReviewPopup>
     </div>
   )
 }

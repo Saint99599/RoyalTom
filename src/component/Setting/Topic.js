@@ -1,4 +1,3 @@
-import avatar from "../Images/avatar.png"
 import React from 'react'
 
 const Topic = ({ name, state }) => {
@@ -6,7 +5,7 @@ const Topic = ({ name, state }) => {
      <div className="selection">
           <div className="list">
                <div className="account">
-                    <img src={avatar}></img>
+               <img src={require("../Images/avatar.png")}></img>
                     <div className="name">
                          <h2>{name}</h2>
                          <p className="editprofile">edit Profile</p>
