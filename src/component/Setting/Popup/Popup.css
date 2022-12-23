@@ -1,0 +1,155 @@
+.popup{
+     position: fixed;
+     top:0;
+     left:0;
+     width:100%;
+     height:100%;
+     background-color:rgba(0, 0, 0, 0.5);
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.popup-inner{
+     position: relative;
+     padding: 32px;
+     width: 100%;
+     min-width:400px;
+     max-width:400px;
+     min-height: 300px;
+     max-height:100%;
+     background-color: #fff;
+     border-radius: 3%;
+}
+
+.popup .popup-inner .popup-title{
+     color:darkgreen;
+     font-family: "Poppins";
+     font-size:28px;
+     margin-top:15px;
+     margin-bottom:15px;
+     font-weight: bold;
+}
+
+.popup .popup-inner .popup-detail p{
+     font-family: "Poppins";
+     font-size:20px;
+     margin:0;
+     color:black;
+     width:100%;
+}
+
+.popup-detail{
+     margin-bottom:15px;
+}
+
+.popup-inner input{
+     width:380px;
+     padding:10px;
+     border-radius: 5%;
+     margin-left:5px;
+     margin-right:5px;
+     border-color: gray;
+}
+
+.popup-detail .popup-name{
+     display:flex;
+}
+
+.button .cancel-btn{
+     color:black;
+     background-color: white;
+}
+
+.popup .popup-inner .button .save-btn{
+     /* color:black; */
+     border-color: darkgreen;
+}
+
+.popup .popup-inner .button{
+     display:flex;
+     float:right;
+}
+
+.popup-block{
+     background-color:rgba(37, 153, 90, 0.1)
+}
+
+.popup-block p{
+     /* border-color: darkgreen; */
+     font-size:20px;
+     margin-left:10px;
+}
+
+.popup-block .popup-des p{
+     font-size:15px;
+     margin-left:10px;
+}
+
+.popup-card{
+     display:flex;
+}
+
+.popup-card #cvv{
+     width:30%;
+     margin-left:20px;
+}
+
+.popup-product{
+     display:flex;
+     margin-bottom:25px;
+     /* position:relative; */
+     /* width:100%; */
+}
+
+.popup-product img{
+     border-radius:5%;
+}
+
+.popup-product p{
+     margin-left:25px;
+     margin-top:35px;
+}
+
+.popup-score{
+     display:flex;
+     position:relative;
+}
+
+.popup-score p{
+     font-size:20px;
+     margin-bottom:10px;
+}
+
+.popup-star{
+     position:absolute;
+     right:40%;
+     top:30%;
+}
+
+#header{
+     font-size: 22px;
+     font-weight: bold;
+}
+
+#review{
+     width:550px;
+     height:100px;
+     border-radius: 5%;
+     word-wrap: break-word;
+     word-break: break-all;
+}
+
+.popup-inner-review{
+     position: relative;
+     padding: 32px;
+     width: 100%;
+     min-width:400px;
+     max-width:600px;
+     min-height: 300px;
+     max-height:100%;
+     background-color: #fff;
+     border-radius: 3%;
+}
+

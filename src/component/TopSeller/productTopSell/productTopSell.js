@@ -1,8 +1,8 @@
 import React from "react";
 import './productTopSell.css';
 
-function productTopSell(props){
-    const {title,imgUrl} = props;
+function productTopSell({title, imgUrl}){
+    // const {title,imgUrl} = props;
     return (
         <div className="contenerPDTopSell">
            <img className="imgPDTopSell" src={imgUrl}/>

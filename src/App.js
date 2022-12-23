@@ -8,8 +8,10 @@ import Footer from './component/footer/footer';
 import Home from './page/home';
 import ProductList from './page/ProductList';
 import Cart from './page/Cart';
-// import Profile from "./page/Profiles";
+import Setting from "./page/Setting";
 import CartProvider from "./component/function/CartContext";
+
+// import Setting from "./page/Setting";
 
 function App() {
   return (
@@ -25,9 +27,9 @@ function App() {
           <Routes>
             <Route path="cart" element={<Cart/>}/>
           </Routes>
-          {/* <Routes>
-            <Route path="profile" element={<Profile/>}/>
-          </Routes> */}
+          <Routes>
+            <Route path="profile" element={<Setting/>}/>
+          </Routes>
         <Footer/>
       </BrowserRouter>
     </CartProvider>
