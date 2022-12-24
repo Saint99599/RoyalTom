@@ -4,7 +4,7 @@ import './category.css';
 function category(){
     return (
         <div className="contenerCategory">
-            <hr/>
+            <hr className="LineGreen"/>
             <ul className="boxCategory">
                 <li className="textCategory Textgreen">
                     Popular
@@ -28,7 +28,7 @@ function category(){
                     Technique
                 </li>
             </ul>
-            <hr/>
+            <hr className="LineGreen"/>
         </div>
     )
 }

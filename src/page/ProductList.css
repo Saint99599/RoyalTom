@@ -1,10 +1,10 @@
-.contenerProductList{
-    display: flex;
+.contenerProductList{display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .boxProductList{
+    margin: 50px 0px;
     width: 1240px;
     display: flex;
     justify-content: start;

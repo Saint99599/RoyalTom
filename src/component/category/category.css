@@ -1,12 +1,11 @@
-.contenerCategory{
-    
-}
 
 .boxCategory{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     height: 58px;
     width: 872px;
+    list-style-type: none;
 }
 
 .textCategory{
@@ -22,6 +21,13 @@
     color: #165724;
 }
 
+
 .Textgrey{
     color: #C4C4C4;
+}
+
+
+.LineGreen{
+    height: 1px;
+    background-color: #165724;
 }
