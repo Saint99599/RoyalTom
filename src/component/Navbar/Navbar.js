@@ -8,25 +8,24 @@ import { CartContext } from "../function/CartContext"
 import search from '../image/search.png'; 
 
 function Navbar(){
-    //บอกจำนวน
     const cart = useContext(CartContext);
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
     return <header className = "contenerNavbar">
-        <Link to = "/" className="textNavbar">
+        <Link to = "/" className="textNavbar Aladin">
             ROYAL TOM
         </Link>
         <ul className="boxNavbar">
-            <li className="searchNavbar">
+            <li className="searchNavbar liNavbar">
                 <input id="search" type="text" placeholder="Search.."/>
                 <button className="btnSearchNavbar" onclick=""> 
                     <img className="searchTopSeller" src={search} alt="search" /> 
                 </button>
             </li>
-            <li className="contactNavbar">
+            <li className="contactNavbar Poppins liNavbar">
                 Help Center
             </li>
-            <li className="cartNavbar">
+            <li className="cartNavbar liNavbar">
                 <Link to = "/cart" className="">
                     {productsCount} item 
 

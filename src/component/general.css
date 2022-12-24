@@ -1,2 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins');
 @import url('https://fonts.googleapis.com/css?family=Aladin');
+
+.Poppins{
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.Aladin{
+    font-family: 'Aladin';
+    font-style: normal;
+}

@@ -10,20 +10,18 @@
 
 .textNavbar{
     text-decoration: none;
-    font-family: 'Aladin';
-    font-style: normal;
     font-weight: 900px;
-    font-size: 36px;
-    color: rgba(22, 87, 36, 0.95);
+    font-size: 48px;
+    color: #165724;
 }
 
-ul {
+.boxNavbar{
     display: flex;
     align-items: center;
     list-style-type: none;
 }
 
-li {
+.liNavbar{
     margin: 0px 10px;
     display: flex;
     align-items: center;
@@ -52,9 +50,6 @@ li {
 .contactNavbar{
     background: #165724;
     border-radius: 11px;
-
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 24px;
 

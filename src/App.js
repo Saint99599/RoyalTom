@@ -41,7 +41,7 @@ function App() {
           <Routes>
             <Route path="login" element={<Login/>}/>
           </Routes>
-        <Footer/>
+        {/* <Footer/> */}
       </BrowserRouter>
     </CartProvider>
   );
