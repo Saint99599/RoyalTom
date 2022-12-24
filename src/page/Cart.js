@@ -6,11 +6,15 @@ import { useState, useContext } from "react";
 import { CartContext } from "../component/function/CartContext"
 import CartProduct from "../component/function/CartProduct";
 
+import Navbar from '../component/Navbar/Navbar';
+
 function Cart() {
       const cart = useContext(CartContext);
       const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
   return(
-      <div className='contenerCart'>
+  <>
+  <Navbar/>
+   <div className='contenerCart'>
          <Link to = "/produclist" className='continueCart'>
             { '< ' + 'Continue Shopping'}
          </Link>
@@ -94,6 +98,7 @@ function Cart() {
             </div>
          </div>
       </div>
+  </>
   )
   }
   

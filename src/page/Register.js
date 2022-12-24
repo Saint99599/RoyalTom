@@ -5,6 +5,8 @@ import logo from '../component/image/royal_tom_logo.png';
 
 import styled from 'styled-components'
 
+import Navbar2 from '../component/Navbar2/Navbar2';
+
 function Register() {
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -42,6 +44,7 @@ function Register() {
 
     return ( 
         <RegisterCSS>
+            <Navbar2/>
             <div className="itemSide">
             <div className="imageLogo">
                 <img className="" src={logo} alt="logo"/>

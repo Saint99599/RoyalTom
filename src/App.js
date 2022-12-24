@@ -19,7 +19,7 @@ function App() {
   return (
     <CartProvider>
       <BrowserRouter>
-        <Navbar/>
+        {/* <Navbar> */}
           <Routes>
             <Route index element={<Login/>}/>
           </Routes>

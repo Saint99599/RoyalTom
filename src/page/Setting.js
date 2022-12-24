@@ -6,6 +6,7 @@ import Address from "../component/Setting/Address"
 import Payment from "../component/Setting/Payment"
 import Privacy from "../component/Setting/Privacy"
 import Purchase from "../component/Setting/Purchase"
+import Navbar from '../component/Navbar/Navbar';
 
 import styled from 'styled-components'
 
@@ -15,23 +16,25 @@ function Setting() {
 
  
   return (
-    <SettingCSS>
-        <div className="container">
-        <Topic state={setActive}/>
-        {active === "Profile" && <Profile />}
-        {active === "Address" && <Address />}
-        {active === "Payment" && <Payment />}
-        {active === "Privacy" && <Privacy />}
-        {active === "Purchase" && <Purchase />}
-      </div>
-    </SettingCSS>
+    <>
+    <Navbar/>
+      <SettingCSS>
+          <div className="container">
+          <Topic state={setActive}/>
+          {active === "Profile" && <Profile />}
+          {active === "Address" && <Address />}
+          {active === "Payment" && <Payment />}
+          {active === "Privacy" && <Privacy />}
+          {active === "Purchase" && <Purchase />}
+        </div>
+      </SettingCSS>
+    </>
+    
     
   );
 }
 
 const SettingCSS = styled.section`
-
-    body{
       background: lightgray;
       width: 100%;
       height:100%;
@@ -39,7 +42,6 @@ const SettingCSS = styled.section`
       padding:0;
       font-family: "Poppins";
       font-size:24px;
-    }
 
     button{
       font-family: "poppins";

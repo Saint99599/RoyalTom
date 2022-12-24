@@ -3,6 +3,10 @@ import TopSeller from '../component/TopSeller/TopSeller';
 import Products from '../component/Products/Products';
 import React, {useEffect} from 'react';
 
+import Navbar from '../component/Navbar/Navbar';
+import Footer from '../component/footer/footer';
+
+
 function Home() {
 useEffect(() => {
   const token = localStorage.getItem('token')
@@ -33,11 +37,14 @@ const handleLogout = (event) => {
   window.location = '/login'
 }
 
-  return ( <div>
+  return ( 
+  <div>
+    <Navbar/>
     <Poster/>
     <button onClick={handleLogout}>Logout</button>
     <TopSeller/>
     <Products/>
+    <Footer/>
   </div>
   );
 }

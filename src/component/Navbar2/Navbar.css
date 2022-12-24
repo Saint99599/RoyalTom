@@ -1,0 +1,65 @@
+.contenerNavbar{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    justify-content: space-between;
+    height: 93px;
+    padding: 0px 48px 0px 48px;
+}
+
+.textNavbar{
+    text-decoration: none;
+    font-weight: 900px;
+    font-size: 48px;
+    color: #165724;
+}
+
+.boxNavbar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.liNavbar{
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+#search{
+    background: #FFFFFF;
+    border: 2px solid #165724;
+    border-radius: 11px;
+    font-size: 18px;
+    height: 36px;
+    width: 300px;
+    padding-left: 20px;
+}
+
+.btnSearchNavbar{
+    right: 0px;
+    background: #165724;
+    border: 2px solid #165724;
+    border-radius: 11px;
+    height: 40px;
+    width: 48px;
+}
+
+.contactNavbar{
+    background: #165724;
+    border-radius: 11px;
+    font-weight: 400;
+    font-size: 24px;
+
+    color: #FFFFFF;
+
+    height: 40px;
+    padding: 0px 20px;
+}
+
+.searchTopSeller{
+    height: 24px;
+}
+

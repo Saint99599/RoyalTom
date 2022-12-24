@@ -12,7 +12,7 @@ function Navbar(){
     const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
 
     return <header className = "contenerNavbar">
-        <Link to = "/" className="textNavbar Aladin">
+        <Link to = "/home" className="textNavbar Aladin">
             ROYAL TOM
         </Link>
         <ul className="boxNavbar">

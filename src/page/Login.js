@@ -2,6 +2,7 @@ import './Register.css';
 
 import {Link} from 'react-router-dom';
 import logo from '../component/image/royal_tom_logo.png'; 
+import Navbar2 from '../component/Navbar2/Navbar2';
 
 import styled from 'styled-components'
 
@@ -39,6 +40,7 @@ function Login() {
 
   return ( 
     <LoginCSS>
+        <Navbar2/>
         <div className="itemSide">
             <div className="imageLogo">
                 <img className="" src={logo} alt="logo"/>
