@@ -1,5 +1,6 @@
 import React from "react";
 import './Navbar.css';
+import '../general.css';
 import {Link} from 'react-router-dom';
 import { useState, useContext } from "react";
 import { CartContext } from "../function/CartContext"
@@ -18,10 +19,12 @@ function Navbar(){
         <ul className="boxNavbar">
             <li className="searchNavbar">
                 <input id="search" type="text" placeholder="Search.."/>
-                <button className="btnSearchNavbar" onclick=""> <img className="searchTopSeller" src={search} alt="search" /> </button>
+                <button className="btnSearchNavbar" onclick=""> 
+                    <img className="searchTopSeller" src={search} alt="search" /> 
+                </button>
             </li>
             <li className="contactNavbar">
-                Contact us
+                Help Center
             </li>
             <li className="cartNavbar">
                 <Link to = "/cart" className="">

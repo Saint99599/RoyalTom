@@ -9,6 +9,8 @@ import Home from './page/home';
 import ProductList from './page/ProductList';
 import Cart from './page/Cart';
 import Setting from "./page/Setting";
+import Register from "./page/Register";
+import Login from "./page/Login";
 import CartProvider from "./component/function/CartContext";
 
 // import Setting from "./page/Setting";
@@ -19,7 +21,10 @@ function App() {
       <BrowserRouter>
         <Navbar/>
           <Routes>
-            <Route index element={<Home/>}/>
+            <Route index element={<Login/>}/>
+          </Routes>
+          <Routes>
+            <Route path="Home" element={<Home/>}/>
           </Routes>
           <Routes>
             <Route path="produclist" element={<ProductList/>}/>
@@ -29,6 +34,12 @@ function App() {
           </Routes>
           <Routes>
             <Route path="profile" element={<Setting/>}/>
+          </Routes>
+          <Routes>
+            <Route path="register" element={<Register/>}/>
+          </Routes>
+          <Routes>
+            <Route path="login" element={<Login/>}/>
           </Routes>
         <Footer/>
       </BrowserRouter>

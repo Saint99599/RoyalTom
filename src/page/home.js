@@ -1,11 +1,41 @@
 import Poster from '../component/Poster/Poster';
 import TopSeller from '../component/TopSeller/TopSeller';
 import Products from '../component/Products/Products';
-import Footer from '../component/footer/footer';
+import React, {useEffect} from 'react';
 
 function Home() {
+useEffect(() => {
+  const token = localStorage.getItem('token')
+  fetch('http://localhost:3333/authen', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization' : 'Bearer '+ token
+        },
+        })
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.status === 'ok'){
+            }else{
+                alert('Authen Failed')
+                localStorage.removeItem('token')
+                window.location = '/'
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+},[])
+
+const handleLogout = (event) => {
+  event.preventDefault()
+  localStorage.removeItem('token')
+  window.location = '/login'
+}
+
   return ( <div>
     <Poster/>
+    <button onClick={handleLogout}>Logout</button>
     <TopSeller/>
     <Products/>
   </div>
