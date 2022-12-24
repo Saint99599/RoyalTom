@@ -6,6 +6,7 @@ import { useState, useContext } from "react";
 import { CartContext } from "../function/CartContext"
 
 import search from '../image/search.png'; 
+import basket from '../image/basket.png'; 
 
 function Navbar(){
     const cart = useContext(CartContext);
@@ -25,9 +26,13 @@ function Navbar(){
             <li className="contactNavbar Poppins liNavbar">
                 Help Center
             </li>
-            <li className="cartNavbar liNavbar">
-                <Link to = "/cart" className="">
-                    {productsCount} item 
+            <li className="liNavbar">
+                <Link to = "/cart" className="cartNavbar">
+                    <img className="basketIMG" src={basket} alt="basket" /> 
+                    <div className="productsCountNavbar">
+                        {productsCount}
+                    </div>
+                    
 
                 </Link>
             </li>

@@ -11,8 +11,7 @@ function ProductCard({product}) {
 
     return(
         <button variant="primary" onClick={() => cart.addOneToCart(product.id)} className="cardProductCard">
-        
-            <img className="imgProductCard" src={require("../image/" + product.img + ".png")}></img>
+            <img className="imgProductCard" src={require("../image/" + product.img + ".png")}/>
             <div className="boxProductCard">
                 <div className="nameProductCard">{product.title}</div>
                 <div className="PSProductCard">

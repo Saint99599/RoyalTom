@@ -13,7 +13,8 @@ function CartProduct(props) {
     return (
         <div className='contenerCartProduct'>
             <div className='titleCartProduct'>
-                <div className='imgCartProduct'></div>
+            <img className="imgCartProduct" src={require("../image/" + productData.img + ".png")}/>
+                {/* <div className='imgCartProduct'></div> */}
                 <div className='boxCartProduct'>
                     <h3 className='nameCartProduct'>{productData.title}</h3>
                     <button className='removeCartProduct' onClick={() => cart.deleteFromCart(id)}>Remove</button>

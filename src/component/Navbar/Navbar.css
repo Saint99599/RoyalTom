@@ -63,3 +63,35 @@
     height: 24px;
 }
 
+.cartNavbar{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.basketIMG{
+    width: 34px;
+    height: 34px;
+}
+
+.basketIMG{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 34px;
+    height: 34px;
+}
+
+.productsCountNavbar{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1564C;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 0px;
+    color: white;
+    border-radius: 15px;
+}

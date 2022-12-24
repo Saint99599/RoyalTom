@@ -8,7 +8,7 @@ const productsArray = [
         title: "Kratom Soda",
         price: "399",
         sold: "12.4k sold",
-        img:"NamTom"
+        img:"SoftDrinkTom"
     },
     {
         id: "2",
@@ -62,7 +62,7 @@ const productsArray = [
         title: "Kratom Cracker",
         price: "149",
         sold: "23.0k sold",
-        img:"Chocotom"
+        img:"KratomCracker"
 
     },
     {
@@ -78,7 +78,7 @@ const productsArray = [
         title: "Kratom Brownie",
         price: "89",
         sold: "912.9k sold",
-        img:"Chocotom"
+        img:"KratomBrownie"
 
     },
     {
@@ -86,7 +86,7 @@ const productsArray = [
         title: "Green Herb Water",
         price: "39",
         sold: "23.3k sold",
-        img:"SoftDrinkTom"
+        img:"GreenHerbWater"
 
     },
     {
@@ -94,7 +94,7 @@ const productsArray = [
         title: "Kratom Boba",
         price: "49",
         sold: "3.4k sold",
-        img:"SoftDrinkTom"
+        img:"KratomBoba"
 
     }
 ];
