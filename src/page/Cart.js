@@ -11,7 +11,6 @@ import Navbar from '../component/Navbar/Navbar';
 function Cart() {
       const cart = useContext(CartContext);
       const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
-  
    return(
   <>
   <Navbar/>

@@ -53,11 +53,11 @@ function Setting() {
 }
 
 const SettingCSS = styled.section`
-      background: lightgray;
-      width: 100%;
-      height:100%;
-      font-family: "Poppins";
-      font-size:24px;
+    background: lightgray;
+    width: 100%;
+    height:100%;
+    font-family: "Poppins";
+    font-size:24px;
 
     button{
       font-family: "poppins";
