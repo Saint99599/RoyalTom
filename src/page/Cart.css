@@ -22,7 +22,7 @@
 .summaryCart{
     padding: 48px;
     background: #FFFFFF;
-    height: 340px;
+    min-height: 340px;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.26);
     border-radius: 11px;
     margin-left: 40px;
@@ -32,7 +32,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #226030;
+    background-color: darkgreen;
     border: none;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     border-radius: 11px;
@@ -43,9 +43,8 @@
     color: #ffff;
     font-weight: 400;
     font-size: 24px;
-
-    background: #52775A;
     border-radius: 11px;
+    cursor: pointer;
 }
 
 .directionCart{
@@ -61,6 +60,37 @@
     letter-spacing: 0.15px;
     text-transform: uppercase;
     color: #333333;
+}
+
+.promoCode{
+    display: flex;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.promoCode input{
+    width:80%;
+    float:left;
+}
+
+.promoCode button{
+    width:20%;
+    padding-top:3px;
+    padding-bottom:3px;
+    float:right;
+    font-family: 'poppins';
+    font-size:16px;
+    font-weight: bold;
+    color:white;
+    border:none;
+    background-color: rgb(188, 80, 83);
+}
+
+.directionCart select{
+    width:100%;
+    font-size: 16px;
+    font-weight:bold;
+    height:30px;
 }
 
 .continueCart{
@@ -130,4 +160,44 @@
     text-transform: uppercase;
 
     color: #333333;
+}
+
+.total{
+    display:inline-block;
+    width:100%;
+}
+
+.total p:first-child{
+    float:left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.total p:nth-child(2){
+    float:right;
+    font-size: 24px;
+    color:darkgreen;
+    font-weight: bold;
+}
+
+.location{
+    cursor:pointer;
+    display:inline-block;
+
+    width:100%;
+    border:solid 2px darkgreen;
+    font-size: 16px;
+    color:darkgreen;
+}
+
+.location p:first-child{
+    float:left;
+    padding:5px
+}
+
+.location p:nth-child(2){
+    float:right;
+    font-weight: bold;
+    text-decoration: underline;
+    padding:5px;
 }
