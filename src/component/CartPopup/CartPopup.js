@@ -8,7 +8,7 @@ const CartPopup = (props) => {
           <div className="popup-inner">
                <img src={require("../Images/correct.png")}></img>  
                <p>Order Success</p>
-               <Link className="correct" to = "/home">
+               <Link className="correct continueCart" to = "/home">
                     <p>return to home page</p>
                </Link>
           </div>

@@ -12,19 +12,19 @@
 }
 
 .popup-inner{
-     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
      padding: 32px;
      width: 400px;
      height: 500px;
-     /* max-height:100%; */
      background-color: #fff;
      border-radius: 25px;
      font-family: 'poppins';
 }
 
 .popup-inner img{
-     margin-top:50px;
-     transform: translate(50%, 0%);
 }
 
 .popup-inner p{

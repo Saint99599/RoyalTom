@@ -1,4 +1,4 @@
-body{
+/* body{
   background: lightgray;
   width: 100%;
   height:100%;
@@ -14,15 +14,11 @@ button{
 }
 
 .container {
-  /* max-width: 500px; */
   margin: auto;
   height: auto;
   overflow: auto;
-  /* min-height: 300px; */
-  /* border: 1px solid steelblue; */
   padding: 30px;
   border-radius: 5px;
-  /* display: flex; */
 }
 
 .selection{
@@ -32,8 +28,6 @@ button{
 }
 
 .selection .list{
-  /* https://stackoverflow.com/questions/19396180/how-to-spread-dynamic-divs-vertically-evenly */
-  display: flex;
   flex-direction:column;
   margin-left: 5%;
 }
@@ -54,7 +48,6 @@ button{
 .selection .btn img{
   margin-top:5px;
   margin-right:10px;
-  /* margin-bottom:0; */
 }
 
 .selection .list .account img{
@@ -92,12 +85,10 @@ button{
 }
 
 .Detail{
-  /* display:inline; */
   width:60%;
   float:left;
   min-height:800px;
   max-height:900px;
-  /* align-items:center; */
   background-color:white;
   border-radius:25px;
   padding:15px;
@@ -120,21 +111,13 @@ button{
 }
 
 .Detail .block p{
-  /* display:inline; */
   width:50%;
   float:left;
-  /* display: flex; */
-  /* width:60%; */
-  /* float:right; */
 }
 
 .Detail .block .input{
   float:left;
-  /* text-align:center; */
-  /* width:50%; */
   padding:20px 0;
-  /* width:50%; */
-
 }
 
 .Detail .addPromotion{
@@ -153,7 +136,6 @@ button{
   cursor:pointer;
   margin:20px;
   border:0;
-  /* height:200px */
 }
 
 .Detail .promotion{
@@ -210,7 +192,6 @@ button{
 }
 
 .promotionList .promotionImage{
-  /* display:flex; */
   background-color: darkgreen;
   width:40%;
   height:100%;
@@ -255,7 +236,6 @@ button{
   padding: 32px;
   width: 100%;
   width:500px;
-  /* max-width:600px; */
   min-height: 300px;
   max-height:100%;
   background-color: #fff;
@@ -325,4 +305,4 @@ button{
 
 .popup-inner .popup-detail p:nth-child(2){
   color:red;
-}
+} */
