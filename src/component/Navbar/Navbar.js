@@ -7,6 +7,7 @@ import { CartContext } from "../function/CartContext"
 
 import search from '../image/search.png'; 
 import basket from '../image/basket.png'; 
+import avatar from '../Images/avatar.png'
 
 function Navbar(){
     const cart = useContext(CartContext);
@@ -40,7 +41,7 @@ function Navbar(){
             </li>
 
             <Link to = "/profile" className="profileNavbar">
-                a
+                <img className="imgNavbar" src={avatar} alt="avatar"/>
             </Link>
         </ul>
         
