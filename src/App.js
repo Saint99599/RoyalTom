@@ -13,6 +13,8 @@ import Register from "./page/Register";
 import Login from "./page/Login";
 import HelpCenter from "./page/HelpCenter"
 import CartProvider from "./component/function/CartContext";
+import OrderStatus from "./component/OrderStatus/OrderStatus"
+import Promotion from "./component/AdminPage/Promotion";
 
 // import Setting from "./page/Setting";
 
@@ -45,6 +47,15 @@ function App() {
           <Routes>
             <Route path="helpcenter" element={<HelpCenter/>}/>
           </Routes>
+          <Routes>
+            <Route path="orderstatus" element={<OrderStatus/>}/>
+          </Routes>
+          <Routes>
+            <Route path="promotion" element={<Promotion/>}/>
+          </Routes>
+          {/* <Routes>
+            <Route path="orderstatus" element={<OrderStatus/>}/>
+          </Routes> */}
         {/* <Footer/> */}
       </BrowserRouter>
     </CartProvider>

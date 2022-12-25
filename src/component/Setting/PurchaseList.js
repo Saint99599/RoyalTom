@@ -1,6 +1,7 @@
 import React from 'react'
 import ReviewPopup from './Popup/ReviewPopup'
 import {useState} from "react"
+import {Link} from 'react-router-dom';
 
 import purchase from './Purchase';
 
@@ -34,9 +35,9 @@ const PurchaseList = (props) => {
 
         <div className="summary">
 
-            <div className="status">
-                <p>{"Status: " + productData.status}</p>
-            </div>
+            <Link to = "/orderstatus" className="status continueCart">
+            <p>{"Status: " + productData.status}</p>
+            </Link>
 
             <div className="total">
                 <p>{"Total Price: " + productData.price + " ฿"}</p>

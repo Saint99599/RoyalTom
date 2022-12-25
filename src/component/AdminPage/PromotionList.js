@@ -4,7 +4,7 @@ const PromotionList = ({promotion}) => {
   return (
      <div className="promotionList">
           <div className="promotionImage">
-               <img src={require('../../Images/' + promotion.img + '.png')}></img>
+               <img src={require('../Images/' + promotion.img + '.png')}></img>
                <p>{promotion.promotion}</p>
           </div>
           <div className="promotionDetail">
