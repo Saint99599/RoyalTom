@@ -20,7 +20,7 @@ function Navbar(){
         <ul className="boxNavbar">
             <li className="searchNavbar liNavbar">
                 <input id="search" type="text" placeholder="Search.."/>
-                <button className="btnSearchNavbar" onclick=""> 
+                <button className="btnSearchNavbar" onClick=""> 
                     <img className="searchTopSeller" src={search} alt="search" /> 
                 </button>
             </li>

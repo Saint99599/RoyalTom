@@ -7,7 +7,7 @@ function SearchHelpCenter() {
             <p className='textSearchHelpCenter'>Hello How can I help you?</p>
             <div className='boxSearchHelpCenter'>
                 <input className="inputSearchHelpCenter" type="text" placeholder="Search"/>
-                <button className="btnSearchHelpCenter" onclick=""> 
+                <button className="btnSearchHelpCenter" onClick=""> 
                     <img className="searchHelpCenter" src={search} alt="search" /> 
                 </button>
             </div>
