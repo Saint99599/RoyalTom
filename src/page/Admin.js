@@ -1,14 +1,7 @@
-import './Setting.css';
+import './Admin.css';
 import React, {useState,useEffect} from "react"
-import Topic from "../component/Setting/Topic"
-import Profile from "../component/Setting/Profile"
-import Address from "../component/Setting/Address"
-import Payment from "../component/Setting/Payment"
-import Privacy from "../component/Setting/Privacy"
-import Purchase from "../component/Setting/Purchase"
-import Navbar from '../component/Navbar/Navbar'
-
-import styled from 'styled-components'
+import Topic from "./components/AdminPage/Topic"
+import Promotion from "./components/AdminPage/Promotion"
 
 function Setting() {
   
@@ -38,7 +31,7 @@ function Setting() {
     <Navbar/>
       <SettingCSS>
           <div className="container">
-          <Topic setState={setActive}/>
+          <Topic state={setActive}/>
           {active === "Profile" && <Profile />}
           {active === "Address" && <Address />}
           {active === "Payment" && <Payment />}
