@@ -1,34 +1,22 @@
 import React from 'react'
+import { useState, useContext } from "react";
+import { CartContext } from "../function/CartContext";
 import PurchaseList from './PurchaseList'
 
-const purchase = [
-  {
-    id:"0096234ASSDKKGHH",
-    name:"Kratom Cigarettes",
-    quantity: 2,
-    price: 999,
-    status: "Pending Order",
-    img:"weed"
-  },
-  {
-    id:"0096234ASSDKKGHH",
-    name:"Kratom Cookie",
-    quantity: 5,
-    price: 1050,
-    status: "Order Complete",
-    img:"cookie"
-  }
-]
-
 const Purchase = () => {
+
+  const cart = useContext(CartContext);
+  const productsCount = cart.items.reduce((sum, product) => sum + product.quantity, 0);
+
   return (
     <div className="Detail">
           <div className="header">
             <p>Purchase</p>
           </div>
           <hr></hr>
-          {purchase.map((purchaseList) => (
-            <PurchaseList purchase={purchaseList}/>
+
+          {cart.items.map( (currentProduct, idx) => (
+            <PurchaseList key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></PurchaseList>
           ))}
     </div>
   )

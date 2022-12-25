@@ -3,7 +3,7 @@ import '../component/ProductCard/ProductCard.css';
 
 import {Link} from 'react-router-dom';
 import { useState, useContext } from "react";
-import { CartContext } from "../component/function/CartContext"
+import { CartContext } from "../component/function/CartContext";
 import CartProduct from "../component/function/CartProduct";
 
 import Navbar from '../component/Navbar/Navbar';
@@ -42,10 +42,7 @@ function Cart() {
                            <p>Total</p>
                         </div>
                      </div>
-
-                     {/* <p>Shopping Cart {productsCount} </p> */}
                      {cart.items.map( (currentProduct, idx) => (
-                        // currentProduct.id
                         <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
                      ))}
                   </div>

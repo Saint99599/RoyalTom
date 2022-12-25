@@ -2,25 +2,32 @@ import React from 'react'
 import ReviewPopup from './Popup/ReviewPopup'
 import {useState} from "react"
 
-const PurchaseList = ({purchase}) => {
+import purchase from './Purchase';
+
+import { getProductData } from "../function/productsStore";
+
+const PurchaseList = (props) => {
     const [popup, setpopup] = useState(false)
+    const id = props.id;
+    const quantity = props.quantity;
+    const productData = getProductData(id);
 
   return (
     <div className="purchase">
         <div className="id">
-            <p>{"Order ID: " + purchase.id}</p>
+            <p>{"Order ID: " + productData.id}</p>
         </div>
         <div className="product">
             <div className="item">
-                <img src={require('../Images/' + purchase.img + '.jpg')}></img>
+                <img className='imgPurchase' src={require("../image/" + productData.img + ".png")}></img>
                 <div className="detail">
-                    <p>{purchase.name}</p>
-                    <p>{"x" + purchase.quantity}</p>
+                    <p>{productData.title}</p>
+                    <p>{"x" + quantity}</p>
                 </div>
             </div>
 
             <div className="price">
-                <p>{purchase.price + " ฿"}</p>
+                <p>{productData.price + " ฿"}</p>
             </div>
 
         </div>
@@ -28,15 +35,20 @@ const PurchaseList = ({purchase}) => {
         <div className="summary">
 
             <div className="status">
-                <p>{"Status: " + purchase.status}</p>
+                <p>{"Status: " + productData.status}</p>
             </div>
 
             <div className="total">
-                <p>{"Total Price: " + purchase.price + " ฿"}</p>
+                <p>{"Total Price: " + productData.price + " ฿"}</p>
             </div>
         </div>
+
+        {/* <img className="" src={require("../image/" + productData.img + ".png")}/>
+        <p className="">{quantity}</p>
+        <p className="">{(quantity * productData.price).toFixed(2)}-</p> */}
+        
         {
-            purchase.status === "Order Complete" &&
+            productData.status == "Order Complete" &&
             <div className="review">
                 <button className='white'>
                     Buy Again
@@ -49,11 +61,8 @@ const PurchaseList = ({purchase}) => {
                 </button>
             </div>
         }
-        {/* {active === "Profile" && } */}
         <hr></hr>
-        <ReviewPopup trigger={popup} setTriggers={setpopup} product={purchase}>
-
-        </ReviewPopup>
+        <ReviewPopup trigger={popup} setTriggers={setpopup} product={productData}></ReviewPopup>
     </div>
   )
 }
