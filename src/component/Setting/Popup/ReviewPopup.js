@@ -7,8 +7,8 @@ const ReviewPopup = ({trigger, setTriggers, product}) => {
                 <p className="popup-title">Rate Product</p>
 
                 <div className="popup-product">
-                    <img src={require('../../Images/' + product.img + '.jpg')}></img>
-                  <p>{product.name}</p>
+                    <img className='imgPurchase' src={require('../../image/' + product.img + '.png')}></img>
+                  <p>{product.title}</p>
                 </div>
                <hr></hr>
                 <div className="popup-score">
