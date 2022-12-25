@@ -1,17 +1,35 @@
 import './Setting.css';
-import React, {useState} from "react"
+import React, {useState,useEffect} from "react"
 import Topic from "../component/Setting/Topic"
 import Profile from "../component/Setting/Profile"
 import Address from "../component/Setting/Address"
 import Payment from "../component/Setting/Payment"
 import Privacy from "../component/Setting/Privacy"
 import Purchase from "../component/Setting/Purchase"
-import Navbar from '../component/Navbar/Navbar';
+import Navbar from '../component/Navbar/Navbar'
 
 import styled from 'styled-components'
 
 function Setting() {
   
+  useEffect(() => {
+    const token = localStorage.getItem('token')
+    fetch('http://localhost:5000/users/profile', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + token
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data)
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, [])
+
   const [active, setActive] = useState("Profile");
 
  

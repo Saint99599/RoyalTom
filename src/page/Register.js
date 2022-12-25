@@ -12,16 +12,24 @@ function Register() {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const jsonData = {
-            Fname: data.get('Fname'),
-            Lname: data.get('Lname'),
-            UserName: data.get('UserName'),
-            Password: data.get('Password'),
-            IDCard: data.get('IDCard'),
-            Email: data.get('Email'),
-            PhoneNumber: data.get('PhoneNumber'),
+            firstName: data.get('Fname'),
+            lastName: data.get('Lname'),
+            username: data.get('UserName'),
+            password: data.get('Password'),
+            cardId: data.get('IDCard'),
+            email: data.get('Email'),
+            phoneNum: data.get('PhoneNumber'),
+
+            // username: data.get('UserName'),
+            // password: data.get('Password'),
+            // firstName: data.get('Fname'),
+            // lastName: data.get('Lname'),
+            // cardId: data.get('IDCard'),
+            // email: data.get('Email'),
+            // phoneNum: data.get('PhoneNumber'),
         }
 
-        fetch('http://localhost:3333/register', {
+        fetch('http://localhost:5000/users/register', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -32,8 +40,6 @@ function Register() {
         .then((data) => {
             if (data.status === 'ok'){
                 alert('Register Success Welcome -_-')
-            }else{
-                alert('Register Failed olo')
             }
         })
         .catch((error) => {

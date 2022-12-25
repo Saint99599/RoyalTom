@@ -10,7 +10,7 @@ import Footer from '../component/footer/footer';
 function Home() {
 useEffect(() => {
   const token = localStorage.getItem('token')
-  fetch('http://localhost:3333/authen', {
+  fetch('http://localhost:5000/users/authen', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

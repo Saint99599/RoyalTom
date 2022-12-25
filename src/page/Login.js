@@ -11,11 +11,11 @@ function Login() {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
         const jsonData = {
-            UserName: data.get('UserName'),
-            Password: data.get('Password'),
+            username: data.get('UserName'),
+            password: data.get('Password'),
         }
 
-        fetch('http://localhost:3333/login', {
+        fetch('http://localhost:5000/users/login', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
