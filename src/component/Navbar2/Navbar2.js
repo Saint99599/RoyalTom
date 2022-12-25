@@ -15,9 +15,9 @@ function Navbar2(){
                 ROYAL TOM
             </Link>
             <ul className="boxNavbar">
-                <li className="contactNavbar Poppins liNavbar">
+                <Link to = "/helpcenter" className="contactNavbar Poppins liNavbar">
                     Help Center
-                </li>
+                </Link>
             </ul>
         </header>
     )

@@ -1,0 +1,47 @@
+.contenerSearchHelpCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 540px;
+    background: #5C8D67;
+}
+
+.textSearchHelpCenter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 121.5%;
+    color: #FFFFFF;
+}
+
+.boxSearchHelpCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.inputSearchHelpCenter{
+    height: 48px;
+    width: 480px;
+    background: #FFFFFF;
+    padding-left: 20px;
+    font-size: 18px;
+    border: 2px solid #165724;
+    border-radius: 11px;
+}
+
+.btnSearchHelpCenter{
+    background: #165724;
+    border: 2px solid #165724;
+    border-radius: 11px;
+    height: 48px;
+    width: 48px;
+}
+
+.searchHelpCenter{
+    height: 20px;
+    width: 20px;
+}

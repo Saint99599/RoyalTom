@@ -1,0 +1,35 @@
+.contenerFAQsHelpCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+}
+
+.contenFAQsHelpCenter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1280px;
+}
+
+.headFAQsHelpCenter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+}
+
+.liFAQsHelpCenter{
+    margin: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.imgFAQsHelpCenter{
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,53 @@
+.contenertopicHelpCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 480px;
+}
+
+.contentopicHelpCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1280px;
+}
+
+.texttopicHelpCenter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    text-transform: uppercase;
+}
+
+.boxtopicHelpCenter{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 36px 0px;
+}
+
+.cardtopicHelpCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #CBCBCB;
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin: 11px;
+}
+
+.ImagetopicHelpCenter{
+    margin-right: 18px;
+}
+
+.ptopicHelpCenter{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}

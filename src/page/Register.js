@@ -108,7 +108,7 @@ function Register() {
     );
   }
 
-  const RegisterCSS = styled.section`
+const RegisterCSS = styled.section`
     .itemSide{
         display: flex;
         justify-content: center;
@@ -182,6 +182,6 @@ function Register() {
         height: 740px;
         border: 1px solid gray;
     }
-  `
+`
   
 export default Register;

@@ -1,0 +1,14 @@
+.contenerContactUsHelpCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 960px;
+    background: #B1CBB8;
+}
+
+.contenContactUsHelpCenter{
+    height: 600px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 88px 90px;
+}

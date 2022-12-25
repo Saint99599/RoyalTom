@@ -23,8 +23,10 @@ function Navbar(){
                     <img className="searchTopSeller" src={search} alt="search" /> 
                 </button>
             </li>
-            <li className="contactNavbar Poppins liNavbar">
-                Help Center
+            <li >
+                <Link to = "/helpcenter" className="contactNavbar Poppins liNavbar">
+                    Help Center
+                </Link>
             </li>
             <li className="liNavbar">
                 <Link to = "/cart" className="cartNavbar">

@@ -11,6 +11,7 @@ import Cart from './page/Cart';
 import Setting from "./page/Setting";
 import Register from "./page/Register";
 import Login from "./page/Login";
+import HelpCenter from "./page/HelpCenter"
 import CartProvider from "./component/function/CartContext";
 
 // import Setting from "./page/Setting";
@@ -40,6 +41,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="login" element={<Login/>}/>
+          </Routes>
+          <Routes>
+            <Route path="helpcenter" element={<HelpCenter/>}/>
           </Routes>
         {/* <Footer/> */}
       </BrowserRouter>
