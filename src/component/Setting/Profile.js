@@ -48,7 +48,7 @@ function Profile() {
       <hr></hr>
       <div className="block">
         <p>Password</p>
-        <p><a href="#">Change Password</a></p>
+        <p><a className='continueCart' href="#">Change Password</a></p>
       </div>
       <hr></hr>
       <div className="block">
