@@ -15,8 +15,12 @@
     background: linear-gradient(270deg, #FFFFFF 30.97%, rgba(247, 247, 246, 0.7) 40.07%, rgba(247, 247, 246, 0) 54.79%);
 }
 
-.ContactFooter{
+.ContactRFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 300px;
+    margin-right: 60px;
 }
 
 .titleFooter{
@@ -25,4 +29,51 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 51px;
+}
+
+.LiRfooter{
+    display: flex;
+    font-family: 'Libre Caslon Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 24px;
+}
+
+.LogoFooter{
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin-right: 16px;
+}
+
+.titleFooter{
+    text-align: center;
+}
+
+.UlLfooter{
+    display: flex;
+    justify-content: space-around;
+}
+
+.LiLfooter{
+    list-style: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 122.5%;
+    color: #FFFFFF;
+}
+
+.LiMargin{
+    margin: 0px 50px 12px 50px;
+}
+
+.ContactLFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 20px;
 }
