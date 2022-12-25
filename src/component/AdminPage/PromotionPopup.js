@@ -1,4 +1,5 @@
 import React from 'react'
+import './Admin.css'
 
 const PromotionPopup = ({trigger, setTriggers, promotion}) => {
   return (trigger) ? (

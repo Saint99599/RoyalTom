@@ -1,4 +1,5 @@
 import React from 'react'
+import './Admin.css'
 
 const PromotionList = ({promotion}) => {
   return (

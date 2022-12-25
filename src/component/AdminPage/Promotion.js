@@ -2,6 +2,7 @@ import React from 'react'
 import PromotionList from './PromotionList'
 import PromotionPopup from './PromotionPopup'
 import {useState} from "react"
+import './Admin.css'
 
 const Promotion = () => {
      const promotion = [
